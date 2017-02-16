@@ -12,8 +12,8 @@
 	//頁面裝不下的nav寬度
 	var container_w = $(window).width();
 	var offset = bc_w-container_w;
-	//所有<li>向右移動
-	$('.rt-breadcrumb-node')
+	//<ul>向右移動
+	$('.rt-breadcrumb-list')
 		.css('-webkit-transform','translate3d('+ -1*(offset)+'px,0,0)')
 		.on('webkitTransitionEnd',function(){
 			//$(this).css({'-webkit-transition':'none','-webkit-transform':'translate3d(0,0,0)'});
