@@ -16,5 +16,5 @@
 	$('.rt-breadcrumb-node')
 		.css('-webkit-transform','translate3d('+ -1*(offset)+'px,0,0)')
 		.on('webkitTransitionEnd',function(){
-			console.log("Ya");
+			$(this).css({'-webkit-transition':'none','-webkit-transform':'translate3d(0,0,0)'});
 		});
